@@ -23,7 +23,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = '+jd+hs#_^-vxg7$#@rn#ja-hui*15y9sh_@!6w@$$8hb@x&%@z'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = ['167.99.136.11']
 
