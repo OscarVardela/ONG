@@ -1,10 +1,690 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Title</title>
+  <meta charset="utf-8">
+  <title>Fundación Porvenir Voces Libres</title>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <meta content="" name="keywords">
+  <meta content="" name="description">
+
+  <!-- Favicons -->
+  <link href="{% static 'img/favicon.png' %}" rel="icon">
+  <link href="{% static 'img/apple-touch-icon.png' %}" rel="apple-touch-icon">
+
+  <!-- Bootstrap CSS File -->
+  <link href="{% static 'lib/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
+
+  <!-- Libraries CSS Files -->
+  <link href="{% static 'lib/font-awesome/css/font-awesome.min.css' %}" rel="stylesheet">
+  <link href="{% static 'lib/animate/animate.min.css' %}" rel="stylesheet">
+  <link href="{% static 'lib/ionicons/css/ionicons.min.css' %}" rel="stylesheet">
+  <link href="{% static 'lib/owlcarousel/assets/owl.carousel.min.css' %}" rel="stylesheet">
+  <link href="{% static 'lib/lightbox/css/lightbox.min.css' %}" rel="stylesheet">
+
+  <!-- Main Stylesheet File -->
+  <link href="{% static 'css/style.css' %}" rel="stylesheet">
+
+  <!-- =======================================================
+    Theme Name: DevFolio
+    Theme URL: https://bootstrapmade.com/devfolio-bootstrap-portfolio-html-template/
+    Author: BootstrapMade.com
+    License: https://bootstrapmade.com/license/
+  ======================================================= -->
 </head>
-<body>
+
+<body id="page-top">
+
+  <!--/ Nav Star /-->
+  <nav class="navbar navbar-b navbar-trans navbar-expand-md fixed-top" id="mainNav">
+    <div class="container">
+      <a class="navbar-brand js-scroll" href="#page-top">VOCES LIBRES</a>
+      <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarDefault"
+        aria-controls="navbarDefault" aria-expanded="false" aria-label="Toggle navigation">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      	<title>Menu Desplegable</title>
+		<style type="text/css">
+
+			* {
+				margin:0px;
+				padding:0px;
+			}
+
+			#header {
+				margin:auto;
+				width:500px;
+				font-family:Arial, Helvetica, sans-serif;
+			}
+
+			ul, ol {
+				list-style:none;
+			}
+
+			.nav > li {
+				float:left;
+			}
+
+			.nav li a {
+				background-color:#000;
+				color:#fff;
+				text-decoration:none;
+				padding:10px 12px;
+				display:block;
+			}
+
+			.nav li a:hover {
+				background-color:#434343;
+			}
+
+			.nav li ul {
+				display:none;
+				position:absolute;
+				min-width:140px;
+			}
+
+			.nav li:hover > ul {
+				display:block;
+			}
+
+			.nav li ul li {
+				position:relative;
+			}
+
+			.nav li ul li ul {
+				right:-140px;
+				top:0px;
+			}
+
+		</style>
+	</head>
+	<body>
+		<div id="header">
+			<ul class="nav">
+				<li><a href="{% url 'blog:index' %}">Página Principal</a></li>
+				<li><a href="">Carreras</a>
+					<ul>
+						<li><a href="#about">Turismo Social Comunitario</a></li>
+						<li><a href="#ambiental">Gestión Ambiental</a></li>
+						<li><a href="#publica">Contaduría Pública</a></li>
+                        <li><a href="#gastronomia">Gastronomía</a></li>
+                        <li><a href="#construccion">Construcción Civíl</a></li>
+                        <li><a href="#enfermería">Enfermería</a></li>
+						<li><a href="#sistemas">Analista de sistemas</a>
+                        <li><a href="#antropologia">Antropología</a>
+							<ul>
+								<li><a href="">Perfil Profesional</a></li>
+								<li><a href="">Campo laboral</a></li>
+							</ul>
+						</li>
+					</ul>
+				</li>
+				<li><a href="">Sucursal Académica</a>
+					<ul>
+						<li><a href="">La Paz</a></li>
+						<li><a href="">Cochabamba</a></li>
+						<li><a href="">Santa Cruz</a></li>
+					</ul>
+				</li>
+
+			</ul>
+		</div>
+	</body>
+    </div>
+  </nav>
+  <!--/ Nav End /-->
+
+  <!--/ Intro Skew Star /-->
+  <div id="home" class="intro route bg-image" style="background-image: url({% static 'img/porvenir.jpeg' %})">
+    <div class="overlay-itro"></div>
+    <div class="intro-content display-table">
+      <div class="table-cell">
+        <div class="container">
+          <!--<p class="display-6 color-d">Hello, world!</p>-->
+          <h1 class="intro-title mb-4">CARRERAS TEC. SUPERIOR</h1>
+          <p class="intro-subtitle"><span class="text-slider-items">Turismo Social Comunitario,Gestión Ambiental,Contaduría Pública,Gastronomía,Construcción Cívil,Enfermería,Anaslista de sistemas,Antropología</span><strong class="text-slider"></strong></p>
+          <!-- <p class="pt-3"><a class="btn btn-primary btn js-scroll px-4" href="#about" role="button">Learn More</a></p> -->
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--/ Intro Skew End /-->
+
+  <section id="about" class="about-mf sect-pt4 route">
+    <div class="container">
+
+
+                <div class="about-me pt-4 pt-md-0">
+                  <div class="title-box-2">
+                    <h5 class="title-left">
+                      Turismo Social Comunitario
+                    </h5>
+                  </div>
+
+                    <div>
+                    <h3>
+                      Perfíl profesional
+                    </h3>
+                  </div>
+                  <p class="lead">
+                    El Técnico Superior en TURISMO SOCIAL COMUNITARIO posee conocimientos teóricos, metodológicos y técnicos que le permitan desempeñarse eficientemente en la planeación, organización y dirección de empresas, organizaciones e instituciones turísticas, relacionándolos con la sociedad.
+                  </p>
+                    <h3>
+                      Campo laboral
+                    </h3>
+                  <p class="lead">
+                    •	Administrador y Gestor de su propio emprendimiento.
+                  </p>
+                    <p class="lead">
+                    •	Consultor en emprendimientos privados.
+                  </p>
+                  <p class="lead">
+                    •	Administrador y Gestor de su propio emprendimiento.
+                  </p>
+                    <p class="lead">
+                    •	Consultor en formulación y elaboración de proyectos sociales.
+                  </p>
+                    <p class="lead">
+                    •	Gerente en empresas Turísticas
+                  </p>
+                    <p class="lead">
+                    •	Gerente en empresas Hoteleras
+                  </p>
+                    <p class="lead">
+                    •	Organizador y planificador de emprendimientos turísticos y hoteleros en diferentes ámbitos
+                  </p>
+                    <p class="lead">
+                    •	Líder en formas de trabajo creativas e innovadoras que estimulen el trabajo en equipo y la autonomía de gestión, posicionando los recursos humanos como elemento estratégico de los servicios turísticos y hoteleros.
+                  </p>
+                  <p class="lead">
+                    •	Agente que promueve acciones que contribuyen al desarrollo turístico y hotelero local y regional
+                  </p>
+                    <center>
+                        <h3>
+                      Plan de estudios
+                    </h3>
+                    </center>
+
+                    <div>
+                        <center>
+                            <img src="{% static 'img/turismo_social.jpeg' %}">
+                        </center>
+                    </div>
+                </div>
+              </div>
+
+  </section>
+
+  <section id="ambiental" class="about-mf sect-pt4 route">
+    <div class="container">
+
+
+                <div class="about-me pt-4 pt-md-0">
+                  <div class="title-box-2">
+                    <h5 class="title-left">
+                      Gestión Ambiental
+                    </h5>
+                  </div>
+
+                    <div>
+                    <h3>
+                      Perfíl profesional
+                    </h3>
+                  </div>
+                  <p class="lead">
+                    El Técnico Superior en gestión ambiental es un profesional con saberes consolidados a partir de diversas prácticas académicas disciplinares, investigativas y de intervención en entornos reales de desempeño profesional y con cualidades para la generación de oportunidades con distinción como profesionales éticos, líderes responsables y comprometidos con esquemas de autosostenibilidad.
+                  </p>
+                    <h3>
+                      Campo laboral
+                    </h3>
+                    <p class="lead">
+                    El Gestor Ambiental estará capacitado para resolver los problemas relacionados a su disciplina y desempeñarse en diversos ámbitos:
+                  </p>
+                  <p class="lead">
+                    •	Instituciones educativas
+                  </p>
+                    <p class="lead">
+                    •	Instituciones relacionadas a la investigación y difusión
+                  </p>
+                  <p class="lead">
+                    •	Organismos públicos y privados
+                  </p>
+                    <p class="lead">
+                    •	Organismos gubernamentales a nivel municipal, provincial o nacional
+                  </p>
+                    <p class="lead">
+                    •	ONG´s
+                  </p>
+                    <p class="lead">
+                    •	Empresas internacionales vinculadas al sector ambiental
+                  </p>
+                    <p class="lead">
+                    •	Empresas de consultoría o auditoría
+                  </p>
+                    <center>
+                        <h3>
+                      Plan de estudios
+                    </h3>
+                    </center>
+
+                    <div>
+                        <center>
+                            <img src="{% static 'img/ambiental.jpeg' %}">
+                        </center>
+                    </div>
+                </div>
+              </div>
+
+  </section>
+
+  <section id="publica" class="about-mf sect-pt4 route">
+    <div class="container">
+
+
+                <div class="about-me pt-4 pt-md-0">
+                  <div class="title-box-2">
+                    <h5 class="title-left">
+                      Contaduría Pública
+                    </h5>
+                  </div>
+
+                    <div>
+                    <h3>
+                      Perfíl profesional
+                    </h3>
+                  </div>
+                  <p class="lead">
+                    La carrera de Contaduría Pública está dirigida a la formación de recursos humanos en las disciplinas contables, financieras, tributarias y de auditoría, capacitándolo en el desarrollo de funciones operativas y/o directivas en empresas u organizaciones, tanto del sector público como privado, con énfasis en el diseño, implementación y administración de sistemas de información contable-financiero, así como la administración legal que norma a las organizaciones.
+                  </p>
+                    <h3>
+                      Campo laboral
+                    </h3>
+                    <p class="lead">
+                    •	Entidades del Sector Publico: Ministerios, Gobernaciones, Municipios, Universidades, Impuestos Nacionales, Empresas Privadas
+                  </p>
+                  <p class="lead">
+                    •	Entidades Financieras – Bancos, Cooperativas de Ahorro y Crédito, Mutuales, ONGs.
+                  </p>
+                    <p class="lead">
+                    •	Empresas Comerciales, Empresas Productoras, Empresas Industriales y de Servicio.
+                  </p>
+
+                    <center>
+                        <h3>
+                      Plan de estudios
+                    </h3>
+                    </center>
+
+                    <div>
+                        <center>
+                            <img src="{% static 'img/publica.jpeg' %}">
+                        </center>
+                    </div>
+                </div>
+              </div>
+
+  </section>
+
+  <section id="gastronomia" class="about-mf sect-pt4 route">
+    <div class="container">
+
+
+                <div class="about-me pt-4 pt-md-0">
+                  <div class="title-box-2">
+                    <h5 class="title-left">
+                      Gastronomía
+                    </h5>
+                  </div>
+
+                    <div>
+                    <h3>
+                      Campo laboral
+                    </h3>
+                  </div>
+                  <p class="lead">
+                    El profesional en gastronomía podrá desempeñarse como: jefe de cocina; líder del área de alimentos y bebidas; administrador de establecimientos gastronómicos; asesor en el diseño y montaje de empresas propias del sector HORECA (hoteles, restaurantes y catering); investigador del patrimonio cultural, turístico y gastronómico; generador de productos y servicios alimenticios y líneas de producción.
+                  </p>
+                    <h3>
+                      Perfil profesional
+                    </h3>
+                    <p class="lead">
+                    •	Comprende, analiza, evalúa y aplica las teorías relacionadas con el sector gastronómico.
+                  </p>
+                  <p class="lead">
+                    •	Aplica normas, procesos, técnicas y métodos propios del área gastronómica.
+                  </p>
+                    <p class="lead">
+                    •	Participa en procesos de investigación, en el sector de alimentos y bebidas.
+                  </p>
+                    <p class="lead">
+                    •	Desarrolla e innova productos y servicios gastronómicos.
+                  </p>
+                    <p class="lead">
+                    •	Conserva, promueve e interviene las diferentes culturas gastronómicas.
+                  </p>
+
+                    <center>
+                        <h3>
+                      Plan de estudios
+                    </h3>
+                    </center>
+
+                    <div>
+                        <center>
+                            <img src="{% static 'img/gastronomia.jpeg' %}">
+                        </center>
+                    </div>
+                </div>
+              </div>
+
+  </section>
+
+  <section id="construccion" class="about-mf sect-pt4 route">
+    <div class="container">
+
+
+                <div class="about-me pt-4 pt-md-0">
+                  <div class="title-box-2">
+                    <h5 class="title-left">
+                      Construcción Cívil
+                    </h5>
+                  </div>
+
+                    <div>
+                    <h3>
+                      Perfíl profesional
+                    </h3>
+                  </div>
+                  <p class="lead">
+Es un profesional de la construcción civil con capacidad creativa para planificar, construir, dirigir y fiscalizar obras de construcción y reconstrucción de edificios tanto pública como privada, conforme a los proyectos y cálculos desarrollados por arquitectos e ingenieros civiles.
+Posee la habilidad para conducir equipos de trabajo multidisciplinario y está formado para asumir con emprendimiento la creación y administración de la empresa constructora.
+Es ejecutor de trabajo a niveles estratégicos con dominio del saber hacer y del saber ser. Es una persona culta, con rigor ético y de pensamiento crítico e innovador en la gestión tecnológica de la empresa.
+
+                  </p>
+                    <h3>
+                      Campo laboral
+                    </h3>
+                    <p class="lead">
+Podrá desempeñarse en empresas constructoras de viviendas, edificios, obras civiles y caminos; en proyectos y consultorías en construcción o áreas afines; en la administración de obras de construcción y procesos orientados a la explotación, así como a la fabricación y uso de materiales de construcción.
+                  </p>
+
+                    <center>
+                        <h3>
+                      Plan de estudios
+                    </h3>
+                    </center>
+
+                    <div>
+                        <center>
+                            <img src="{% static 'img/construccion.jpeg' %}">
+                        </center>
+                    </div>
+                </div>
+              </div>
+
+  </section>
+
+  <section id="enfermería" class="about-mf sect-pt4 route">
+    <div class="container">
+
+
+                <div class="about-me pt-4 pt-md-0">
+                  <div class="title-box-2">
+                    <h5 class="title-left">
+                      Enfermería
+                    </h5>
+                  </div>
+
+                    <div>
+                    <h3>
+                      Perfíl profesional
+                    </h3>
+                  </div>
+                  <p class="lead">
+                    •	Realizar tratamiento oportuno a la población en general.
+                  </p>
+                    <p class="lead">
+                    •	Realizar cuidados en base a la detección de necesidades básicas no satisfechas del paciente en centros de salud y domicilios.
+                  </p>
+                    <p class="lead">
+                    •	Realizar el diagnostico de salud comunitaria, elaborar y ejecutar planes de acción en base a los problemas de salud detectados en la población.
+                  </p>
+                    <h3>
+                      Campo laboral
+                    </h3>
+                    <p class="lead">
+                    Es apto para trabajar en empresas públicas o privadas en las áreas de:
+                  </p>
+                  <p class="lead">
+                    •	Clínicas y hospitales en las especialidades básicas de (Pediatría, Ginecología, Obstetricia, Rehabilitación, etc.).
+                  </p>
+                    <p class="lead">
+                    •	Instituciones de salud estatales y particulares.
+                  </p>
+                  <p class="lead">
+                    •	Hogares
+                  </p>
+                    <p class="lead">
+                    •	Centros de investigación Organismos gubernamentales vinculados al sector.
+                  </p>
+                    <p class="lead">
+                    •	Salud, Servicios ambulatorios y postas médicas.
+                  </p>
+                    <p class="lead">
+                    •	Empresas particulares que cuentan con servicio de asistencia médica.
+                  </p>
+                    <center>
+                        <h3>
+                      Plan de estudios
+                    </h3>
+                    </center>
+
+                    <div>
+                        <center>
+                            <img src="{% static 'img/enfermeria.jpeg' %}">
+                        </center>
+                    </div>
+                </div>
+              </div>
+
+  </section>
+
+    <section id="sistemas" class="about-mf sect-pt4 route">
+    <div class="container">
+
+
+                <div class="about-me pt-4 pt-md-0">
+                  <div class="title-box-2">
+                    <h5 class="title-left">
+                      Analísta de sistemas
+                    </h5>
+                  </div>
+
+                    <div>
+                    <h3>
+                      Perfíl profesional
+                    </h3>
+                  </div>
+                  <p class="lead">
+                    •	Capacidades lógicas, analíticas y de investigación, así como habilidades creativas.
+                  </p>
+                    <p class="lead">
+                    •	Conocimientos de informática y técnicas de programación.
+                  </p>
+                    <p class="lead">
+                    •	Conocimientos generales del funcionamiento empresarial.
+                  </p>
+                    <p class="lead">
+                    •	Saber escuchar y tener la capacidad de hacer las preguntas correctas.
+                  </p>
+                    <p class="lead">
+                    •	Tacto, diplomacia y buenas habilidades de negociación.
+                  </p>
+                    <p class="lead">
+                    •	La capacidad y voluntad de conocer el departamento u empresa en la que se ofrecen los servicios.
+                  </p>
+                    <p class="lead">
+                    •	Buenas habilidades de redacción de informes.
+                  </p>
+                    <h3>
+                      Campo laboral
+                    </h3>
+                    <p class="lead">
+                    Principales áreas de desarrollo profesional:
+                  </p>
+                  <p class="lead">
+                    •	Empresas proveedoras de soluciones de hardware y software.
+                  </p>
+                    <p class="lead">
+                    •	Empresas dedicadas al desarrollo de tecnología para telefonía y telecomunicaciones.
+                  </p>
+                  <p class="lead">
+                    •	Empresas que utilicen sistemas de computación en cualquiera de los sectores: gobierno, industrial, manufacturero, bancario, social, salud o telecomunicaciones, entre otros.
+                  </p>
+
+                    <center>
+                        <h3>
+                      Plan de estudios
+                    </h3>
+                    </center>
+
+                    <div>
+                        <center>
+                            <img src="{% static 'img/sistemas.jpeg' %}">
+                        </center>
+                    </div>
+                </div>
+              </div>
+
+  </section>
+
+
+      <section id="antropologia" class="about-mf sect-pt4 route">
+    <div class="container">
+
+
+                <div class="about-me pt-4 pt-md-0">
+                  <div class="title-box-2">
+                    <h5 class="title-left">
+                      Antropología
+                    </h5>
+                  </div>
+
+                    <div>
+                    <h3>
+                      Perfíl profesional
+                    </h3>
+                  </div>
+                  <p class="lead">
+                    •	Comprometido con los procesos de transformación de la sociedad colonial, patriarcal
+favoreciendo a los sectores más vulnerables de la sociedad.
+                  </p>
+                    <p class="lead">
+                    •	Promueve el desarrollo integral respetando la
+dinámica sociocultural de nuestros pueblos y nuestra sociedad en general en un contexto diverso cultural y lingüístico.
+                  </p>
+                    <h3>
+                      Campo laboral
+                    </h3>
+                    <p class="lead">
+                    El mercado de trabajo del Licenciado en Antropología es requerido en:
+                  </p>
+                  <p class="lead">
+                    •	Instituciones de salud y nutrición.
+                  </p>
+                    <p class="lead">
+                    •	Educación e interculturalidad.
+                  </p>
+                  <p class="lead">
+                    •	Desarrollo económico productivo (rural y urbano).
+                  </p>
+                  <p class="lead">
+                    •	Política pública.
+                  </p>
+                  <p class="lead">
+                    •	Lingüística.
+                  </p>
+                  <p class="lead">
+                    •	Revitalización social y cultural.
+                  </p>
+                  <p class="lead">
+                    •	Museología.
+                  </p>
+                  <p class="lead">
+                    •	Gestión cultural.
+                  </p>
+                  <p class="lead">
+                    •	Arqueología.
+                  </p>
+                  <p class="lead">
+                    •	Medio ambiente entre otros.
+                  </p>
+
+                    <center>
+                        <h3>
+                      Plan de estudios
+                    </h3>
+                    </center>
+
+                    <div>
+                        <center>
+                            <img src="{% static 'img/antro.jpeg' %}">
+                        </center>
+                    </div>
+                </div>
+              </div>
+
+  </section>
+
+
+  <!--/ Section Contact-Footer Star /-->
+  <section class="paralax-mf footer-paralax bg-image sect-mt4 route" style="background-image: url(img/overlay-bg.jpg)">
+    <div class="overlay-mf"></div>
+
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12">
+            <div class="copyright-box">
+              <p class="copyright">&copy; Copyright <strong>Fundación Porvenir Voces Libres</strong>. Cochabamba, Bolivia</p>
+              <div class="credits">
+                <!--
+                  All the links in the footer should remain intact.
+                  You can delete the links only if you purchased the pro version.
+                  Licensing information: https://bootstrapmade.com/license/
+                  Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/buy/?theme=DevFolio
+                -->
+                Designed by <a href="https://www.instagram.com/oscarvardela/">OscarVardela</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </section>
+  <!--/ Section Contact-footer End /-->
+
+  <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
+  <div id="preloader"></div>
+
+  <!-- JavaScript Libraries -->
+  <script src="{% static 'lib/jquery/jquery.min.js' %}"></script>
+  <script src="{% static 'lib/jquery/jquery-migrate.min.js' %}"></script>
+  <script src="{% static 'lib/popper/popper.min.js' %}"></script>
+  <script src="{% static 'lib/bootstrap/js/bootstrap.min.js' %}"></script>
+  <script src="{% static 'lib/easing/easing.min.js' %}"></script>
+  <script src="{% static 'lib/counterup/jquery.waypoints.min.js' %}"></script>
+  <script src="{% static 'lib/counterup/jquery.counterup.js' %}"></script>
+  <script src="{% static 'lib/owlcarousel/owl.carousel.min.js' %}"></script>
+  <script src="{% static 'lib/lightbox/js/lightbox.min.js' %}"></script>
+  <script src="{% static 'lib/typed/typed.min.js' %}"></script>
+  <!-- Contact Form JavaScript File -->
+  <script src="{% static 'contactform/contactform.js' %}"></script>
+
+  <!-- Template Main Javascript File -->
+  <script src="{% static 'js/main.js' %}"></script>
 
 </body>
 </html>

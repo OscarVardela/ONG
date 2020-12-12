@@ -52,15 +52,22 @@
           </li>
           <li class="nav-item">
             <a class="nav-link js-scroll" href="#about">Acerca de nosotros</a>
+
           </li>
           <li class="nav-item">
-            <a class="nav-link js-scroll" href="#service">CAMPAÑAS</a>
+            <a class="nav-link js-scroll" href="#work">CAMPAÑAS</a><!--service-->
           </li>
           <li class="nav-item">
-            <a class="nav-link js-scroll" href="#work">PROYECTOS SOCIALES</a>
+            <a class="nav-link js-scroll" href="#apoyo">PROYECTOS SOCIALES</a>
           </li>
           <li class="nav-item">
             <a class="nav-link js-scroll" href="#blog">DISTINCIONES</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll" href="#convenios">CONVENIOS</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll" href="{% url 'blog:galeria' %}">CARRERAS</a>
           </li>
           <li class="nav-item">
             <a class="nav-link js-scroll" href="#contact">Contacto</a>
@@ -97,21 +104,152 @@
                 <div class="row">
                   <div class="col-sm-6 col-md-5">
                     <div class="about-img">
-                      <img src="{% static 'img/presi.jpeg' %}" class="img-fluid rounded b-shadow-a" alt="">
+                      <img src="{% static 'img/zurita.png' %}" class="img-fluid rounded b-shadow-a" alt="">
                     </div>
                   </div>
                   <div class="col-sm-6 col-md-7">
                     <div class="about-info">
-                      <p><span class="title-s">Nombre: </span> <span>Patricia Zurita Ponce</span></p>
+                      <p><span class="title-s">Nombre: </span> <span>Patricia Zurita </span></p>
                       <p><span class="title-s">Cargo: </span> <span>Presidente de la fundacion Porvenir</span></p>
-                      <p><span class="title-s">Email: </span> <span>pzuritaponce@gmail.com</span></p>
                     </div>
                   </div>
                 </div>
 
-                <div class="title-box-2">
+                <div class="row">
+                  <div class="col-sm-6 col-md-5">
+                    <div class="about-img">
+                      <img src="{% static 'img/patricia.png' %}" class="img-fluid rounded b-shadow-a" alt="">
+                    </div>
+                  </div>
+                  <div class="col-sm-6 col-md-7">
+                    <div class="about-info">
+                      <p><span class="title-s">Nombre: </span> <span>Patricia Gutierrez</span></p>
+                      <p><span class="title-s">Cargo: </span> <span>Directora del área académica</span></p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="row">
+                  <div class="col-sm-6 col-md-5">
+                    <div class="about-img">
+                      <img src="{% static 'img/oscar.png' %}" class="img-fluid rounded b-shadow-a" alt="">
+                    </div>
+                  </div>
+                  <div class="col-sm-6 col-md-7">
+                    <div class="about-info">
+                      <p><span class="title-s">Nombre: </span> <span>Oscar Quiroga</span></p>
+                      <p><span class="title-s">Cargo: </span> <span>Director Financiero</span></p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="row">
+                  <div class="col-sm-6 col-md-5">
+                    <div class="about-img">
+                      <img src="{% static 'img/iris.png' %}" class="img-fluid rounded b-shadow-a" alt="">
+                    </div>
+                  </div>
+                  <div class="col-sm-6 col-md-7">
+                    <div class="about-info">
+                      <p><span class="title-s">Nombre: </span> <span>Iris María Calderón</span></p>
+                      <p><span class="title-s">Cargo: </span> <span>Directora de la carrera Turismo Social Comunitario</span></p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="row">
+                  <div class="col-sm-6 col-md-5">
+                    <div class="about-img">
+                      <img src="{% static 'img/elina.png' %}" class="img-fluid rounded b-shadow-a" alt="">
+                    </div>
+                  </div>
+                  <div class="col-sm-6 col-md-7">
+                    <div class="about-info">
+                      <p><span class="title-s">Nombre: </span> <span>Elina Mejía</span></p>
+                      <p><span class="title-s">Cargo: </span> <span>Directora de la carrera Gestión Ambiental</span></p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="row">
+                  <div class="col-sm-6 col-md-5">
+                    <div class="about-img">
+                      <img src="{% static 'img/maria.png' %}" class="img-fluid rounded b-shadow-a" alt="">
+                    </div>
+                  </div>
+                  <div class="col-sm-6 col-md-7">
+                    <div class="about-info">
+                      <p><span class="title-s">Nombre: </span> <span>María Choque</span></p>
+                      <p><span class="title-s">Cargo: </span> <span>Directora de la carrera Contaduría Pública</span></p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="row">
+                  <div class="col-sm-6 col-md-5">
+                    <div class="about-img">
+                      <img src="{% static 'img/gabriel.png' %}" class="img-fluid rounded b-shadow-a" alt="">
+                    </div>
+                  </div>
+                  <div class="col-sm-6 col-md-7">
+                    <div class="about-info">
+                      <p><span class="title-s">Nombre: </span> <span>Gabriel Cáceres</span></p>
+                      <p><span class="title-s">Cargo: </span> <span>Director de la carrera de Gastronomía</span></p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="row">
+                  <div class="col-sm-6 col-md-5">
+                    <div class="about-img">
+                      <img src="{% static 'img/juan.png' %}" class="img-fluid rounded b-shadow-a" alt="">
+                    </div>
+                  </div>
+                  <div class="col-sm-6 col-md-7">
+                    <div class="about-info">
+                      <p><span class="title-s">Nombre: </span> <span>Juan Mena</span></p>
+                      <p><span class="title-s">Cargo: </span> <span>Director de la carrera Construcción Cívil</span></p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="row">
+                  <div class="col-sm-6 col-md-5">
+                    <div class="about-img">
+                      <img src="{% static 'img/italo.png' %}" class="img-fluid rounded b-shadow-a" alt="">
+                    </div>
+                  </div>
+                  <div class="col-sm-6 col-md-7">
+                    <div class="about-info">
+                      <p><span class="title-s">Nombre: </span> <span>Italo Saavedra</span></p>
+                      <p><span class="title-s">Cargo: </span> <span>Director de la carrera Analista de sistemas</span></p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="row">
+                  <div class="col-sm-6 col-md-5">
+                    <div class="about-img">
+                      <img src="{% static 'img/sara.png' %}" class="img-fluid rounded b-shadow-a" alt="">
+                    </div>
+                  </div>
+                  <div class="col-sm-6 col-md-7">
+                    <div class="about-info">
+                      <p><span class="title-s">Nombre: </span> <span>Sara Durán</span></p>
+                      <p><span class="title-s">Cargo: </span> <span>Directora de la carrera de ENferemería</span></p>
+                    </div>
+                  </div>
+                </div>
+
+
+
+
+              </div>
+              <div class="col-md-6">
+                <div class="about-me pt-4 pt-md-0">
+                  <div class="title-box-2">
                     <h5 class="title-left">
-                      HISTORIA
+                      Historia
                     </h5>
                   </div>
                   <p class="lead">
@@ -122,13 +260,7 @@ Fundacion “PORVENIR VOCES LIBRES” lleva adelante el proyecto “ABRIENDO NUE
 Desde 2005, y año a año, fundación “PORVENIR VOCES LIBRES”, ha colaborado a la población de Bolivia mediante programas, conferencias, planes y proyectos con el objetivo de desarrollar y promover en estas comunidades la educación sobre los derechos humanos, el liderazgo responsable y la igualdad de oportunidades para promover la tranformacion humana en el país.
 Fundación “PORVENIR VOCES LIBRES” es una organozación no gubernamental sin fines de lucro, con profesionales educadores y voluntarios locaes e internacionales. Para seguir con nuestros proyectos y desarrollar nuestras actividades, necesitamos apoyo financiero, voluntarios y nuevos socios. La felicidad y el bienestar de nuestros jóvenes dependen de las generosas contribucuines de nuestros donantes y socios, y sobre todo del trabajp de los voluntarios apasionados y motivados.
 En 2008, fundación “PORNENIR VOCES LIBRES” inauguró sus dos nuevas sucursales en las ciudades de La Paz el mes de marzo, y en la ciudad de Santa Cruz el mes de agosto; contribuyendo de manera especial y dirigída a comunidades desfavorecidas de las afueras de la ciudad, donde trabajamos todos los días de lunes a viernes todo el día.
-
                   </p>
-
-
-              </div>
-              <div class="col-md-6">
-                <div class="about-me pt-4 pt-md-0">
                   <div class="title-box-2">
                     <h5 class="title-left">
                       ¿Quienes somos?
@@ -808,7 +940,7 @@ En 2008, fundación “PORNENIR VOCES LIBRES” inauguró sus dos nuevas sucursa
   <!--/ Section Portfolio End /-->
 
 
-  <section id="work" class="portfolio-mf sect-pt4 route">
+  <section id="apoyo" class="portfolio-mf sect-pt4 route">
     <div class="container">
       <div class="row">
         <div class="col-sm-12">
@@ -817,7 +949,7 @@ En 2008, fundación “PORNENIR VOCES LIBRES” inauguró sus dos nuevas sucursa
               Proyectos de apoyo social
             </h3>
             <p class="subtitle-a">
-              Nos debemos a nuestra comunidad.
+              Estamos para apoyarnos - Ayuda a familias afectadas por el covid-19.
             </p>
             <div class="line-mf"></div>
           </div>
@@ -835,7 +967,7 @@ En 2008, fundación “PORNENIR VOCES LIBRES” inauguró sus dos nuevas sucursa
                   <div class="col-sm-8">
                     <h2 class="w-title">Familia Zona Sur</h2>
                     <div class="w-more">
-                      <span class="w-ctegory">Cochabamba</span> / <span class="w-date">18 Sep. 2019</span>
+                      <span class="w-ctegory">Cochabamba</span> / <span class="w-date">Ago. 2020</span>
                     </div>
                   </div>
                   <div class="col-sm-4">
@@ -859,7 +991,7 @@ En 2008, fundación “PORNENIR VOCES LIBRES” inauguró sus dos nuevas sucursa
                   <div class="col-sm-8">
                     <h2 class="w-title">Llevamos solidaridad</h2>
                     <div class="w-more">
-                      <span class="w-ctegory">Cochabamba</span> / <span class="w-date">18 Sep. 2018</span>
+                      <span class="w-ctegory">Cochabamba</span> / <span class="w-date">Ago. 2020</span>
                     </div>
                   </div>
                   <div class="col-sm-4">
@@ -883,7 +1015,7 @@ En 2008, fundación “PORNENIR VOCES LIBRES” inauguró sus dos nuevas sucursa
                   <div class="col-sm-8">
                     <h2 class="w-title">Colaboramos a nuestras mujeres</h2>
                     <div class="w-more">
-                      <span class="w-ctegory">Cochabamba</span> / <span class="w-date">18 Sep. 2018</span>
+                      <span class="w-ctegory">Cochabamba</span> / <span class="w-date">Ago. 2020</span>
                     </div>
                   </div>
                   <div class="col-sm-4">
@@ -907,7 +1039,7 @@ En 2008, fundación “PORNENIR VOCES LIBRES” inauguró sus dos nuevas sucursa
                   <div class="col-sm-8">
                     <h2 class="w-title">Colaboramos a padres trabajadores</h2>
                     <div class="w-more">
-                      <span class="w-ctegory">Cochabamba</span> / <span class="w-date">18 Sep. 2018</span>
+                      <span class="w-ctegory">Cochabamba</span> / <span class="w-date">Ago. 2020</span>
                     </div>
                   </div>
                   <div class="col-sm-4">
@@ -931,7 +1063,7 @@ En 2008, fundación “PORNENIR VOCES LIBRES” inauguró sus dos nuevas sucursa
                   <div class="col-sm-8">
                     <h2 class="w-title">Madres de familia</h2>
                     <div class="w-more">
-                      <span class="w-ctegory">Cochabamba</span> / <span class="w-date">18 Sep. 2018</span>
+                      <span class="w-ctegory">Cochabamba</span> / <span class="w-date">Ago. 2020</span>
                     </div>
                   </div>
                   <div class="col-sm-4">
@@ -956,7 +1088,7 @@ En 2008, fundación “PORNENIR VOCES LIBRES” inauguró sus dos nuevas sucursa
                   <div class="col-sm-8">
                     <h2 class="w-title">Nuestros voluntarios</h2>
                     <div class="w-more">
-                      <span class="w-ctegory">Cochabamba</span> / <span class="w-date">18 Sep. 2017</span>
+                      <span class="w-ctegory">Cochabamba</span> / <span class="w-date">Ago. 2020</span>
                     </div>
                   </div>
                   <div class="col-sm-4">
@@ -980,7 +1112,7 @@ En 2008, fundación “PORNENIR VOCES LIBRES” inauguró sus dos nuevas sucursa
                   <div class="col-sm-8">
                     <h2 class="w-title">Apoyamos a los adultos mayores</h2>
                     <div class="w-more">
-                      <span class="w-ctegory">Cochabamba</span> / <span class="w-date">18 Sep. 2017</span>
+                      <span class="w-ctegory">Cochabamba</span> / <span class="w-date">Ago. 2020</span>
                     </div>
                   </div>
                   <div class="col-sm-4">
@@ -1004,7 +1136,7 @@ En 2008, fundación “PORNENIR VOCES LIBRES” inauguró sus dos nuevas sucursa
                   <div class="col-sm-8">
                     <h2 class="w-title">Colaboramos a nuestras madres</h2>
                     <div class="w-more">
-                      <span class="w-ctegory">Cochabamba</span> / <span class="w-date">18 Sep. 2017</span>
+                      <span class="w-ctegory">Cochabamba</span> / <span class="w-date">Ago. 2020</span>
                     </div>
                   </div>
                   <div class="col-sm-4">
@@ -1028,7 +1160,7 @@ En 2008, fundación “PORNENIR VOCES LIBRES” inauguró sus dos nuevas sucursa
                   <div class="col-sm-8">
                     <h2 class="w-title">Un barrio periurbano</h2>
                     <div class="w-more">
-                      <span class="w-ctegory">Cochabamba</span> / <span class="w-date">18 Sep. 2017</span>
+                      <span class="w-ctegory">Cochabamba</span> / <span class="w-date">Ago. 2020</span>
                     </div>
                   </div>
                   <div class="col-sm-4">
@@ -1052,7 +1184,7 @@ En 2008, fundación “PORNENIR VOCES LIBRES” inauguró sus dos nuevas sucursa
                   <div class="col-sm-8">
                     <h2 class="w-title">Studio Big Bang</h2>
                     <div class="w-more">
-                      <span class="w-ctegory">Cochabamba</span> / <span class="w-date">18 Sep. 2017</span>
+                      <span class="w-ctegory">Cochabamba</span> / <span class="w-date">Ago. 2020</span>
                     </div>
                   </div>
                   <div class="col-sm-4">
@@ -1076,7 +1208,7 @@ En 2008, fundación “PORNENIR VOCES LIBRES” inauguró sus dos nuevas sucursa
                   <div class="col-sm-8">
                     <h2 class="w-title">Ayudando a niños</h2>
                     <div class="w-more">
-                      <span class="w-ctegory">Cochabamba</span> / <span class="w-date">18 Sep. 2017</span>
+                      <span class="w-ctegory">Cochabamba</span> / <span class="w-date">Ago. 2020</span>
                     </div>
                   </div>
                   <div class="col-sm-4">
@@ -1100,7 +1232,7 @@ En 2008, fundación “PORNENIR VOCES LIBRES” inauguró sus dos nuevas sucursa
                   <div class="col-sm-8">
                     <h2 class="w-title">Colaborando a madres</h2>
                     <div class="w-more">
-                      <span class="w-ctegory">Cochabamba</span> / <span class="w-date">18 Sep. 2017</span>
+                      <span class="w-ctegory">Cochabamba</span> / <span class="w-date">Ago. 2020</span>
                     </div>
                   </div>
                   <div class="col-sm-4">
@@ -1124,7 +1256,7 @@ En 2008, fundación “PORNENIR VOCES LIBRES” inauguró sus dos nuevas sucursa
                   <div class="col-sm-8">
                     <h2 class="w-title">Nuestra ayuda</h2>
                     <div class="w-more">
-                      <span class="w-ctegory">Cochabamba</span> / <span class="w-date">18 Sep. 2017</span>
+                      <span class="w-ctegory">Cochabamba</span> / <span class="w-date">Ago. 2020</span>
                     </div>
                   </div>
                   <div class="col-sm-4">
@@ -1148,7 +1280,7 @@ En 2008, fundación “PORNENIR VOCES LIBRES” inauguró sus dos nuevas sucursa
                   <div class="col-sm-8">
                     <h2 class="w-title">Madres trabajadoras</h2>
                     <div class="w-more">
-                      <span class="w-ctegory">Cochabamba</span> / <span class="w-date">18 Sep. 2017</span>
+                      <span class="w-ctegory">Cochabamba</span> / <span class="w-date">Ago. 2020</span>
                     </div>
                   </div>
                   <div class="col-sm-4">
@@ -1173,7 +1305,7 @@ En 2008, fundación “PORNENIR VOCES LIBRES” inauguró sus dos nuevas sucursa
                   <div class="col-sm-8">
                     <h2 class="w-title">Colaborando a personas en situacion vulnerable</h2>
                     <div class="w-more">
-                      <span class="w-ctegory">Cochabamba</span> / <span class="w-date">18 Sep. 2017</span>
+                      <span class="w-ctegory">Cochabamba</span> / <span class="w-date">Ago. 2020</span>
                     </div>
                   </div>
                   <div class="col-sm-4">
@@ -1185,6 +1317,19 @@ En 2008, fundación “PORNENIR VOCES LIBRES” inauguró sus dos nuevas sucursa
               </div>
             </a>
           </div>
+        </div>
+        <div>
+          <h2>Documentos para descargar</h2>
+          <div><a href="{% static 'img/turismopdf.pdf' %}" download="PROYECTO DE TURISMO Y DESARROLLO SOSTENIBLE PARA EL PARQUE NACIONAL AMBORO Y PARQUE CARRASCO">
+          Descargar PROYECTO DE TURISMO Y DESARROLLO SOSTENIBLE PARA EL PARQUE NACIONAL AMBORO Y PARQUE CARRASCO
+          </a></div>
+          <div><a href="{% static 'img/desarrollo.pdf' %}" download="PROYECTO DE DESARROLLO  TURISTICO AMBIENTAL COMUNITARIO">
+          Descargar PROYECTO DE DESARROLLO  TURISTICO AMBIENTAL COMUNITARIO
+          </a></div>
+          <div><a href="{% static 'img/intercambio.pdf' %}" download="PROYECTO DE INTERCAMBIO DE EXPERIENCIAS EN PROTOCOLOS Y MANEJO DE ATENCION COVID-19">
+          Descargar PROYECTO DE INTERCAMBIO DE EXPERIENCIAS EN PROTOCOLOS Y MANEJO DE ATENCION COVID-19
+          </a></div>
+
         </div>
 
       </div>
@@ -1411,6 +1556,176 @@ En 2008, fundación “PORNENIR VOCES LIBRES” inauguró sus dos nuevas sucursa
     </div>
   </section>
   <!--/ Section Blog End /-->
+
+  <section id="convenios" class="about-mf sect-pt4 route">
+    <div class="container">
+
+
+                <div class="about-me pt-4 pt-md-0">
+                  <div class="title-box-2">
+                    <h5 class="title-left">
+                      CONVENIOS
+                    </h5>
+                  </div>
+
+                    <div>
+
+                  </div>
+                  <p class="lead">
+                    Gracias a los convenios Inter- estatales e Inter- institucionales que logramos conseguir a lo largo de los años, fomentamos el desarrollo social y económico de las comunidades basado en sus potencialidades logramos promover, diseñar y ejecutar proyectos eco- ambientales y turísticos.
+                  </p>
+                  <h2>
+                      <STRONG>CONVENIOS- DEPARTAMENTO DE COCHABAMBA</STRONG>
+                    </h2>
+
+
+                        <h3>
+                      Gobierno Municipal de Cochabamba
+                    </h3>
+
+
+                    <div>
+
+                            <img src="{% static 'img/cocha.jpeg' %}">
+
+                    </div>
+                  <h3>
+                      Instituto CIEN
+                    </h3>
+
+
+                    <div>
+
+                            <img src="{% static 'img/cien.jpg' %}">
+
+                    </div>
+                  <h3>
+                      Instituto Tecnológico Nacional Andrés Bello
+                    </h3>
+
+
+                    <div>
+
+                            <img src="{% static 'img/itab.jpeg' %}">
+
+                    </div>
+                  <h3>
+                      Universidad Mayor de San Simón
+                    </h3>
+
+
+                    <div>
+
+                            <img height="400" width="400" src="{% static 'img/umss.jpeg' %}">
+
+                    </div>
+                  <h3>
+                      Fundación INFOCAL
+                    </h3>
+
+
+                    <div>
+
+                            <img height="400" width="400" src="{% static 'img/infocal.jpeg' %}">
+
+                    </div>
+                  <h3>
+                      UNITEPC
+                    </h3>
+
+
+                    <div>
+
+                            <img height="400" width="400" src="{% static 'img/unitepc.jpeg' %}">
+
+                    </div>
+                  <h3>
+                      Instituto CETA
+                    </h3>
+
+
+                    <div>
+
+                            <img height="400" width="400" src="{% static 'img/ceta.jpeg' %}">
+
+                    </div>
+                  <h3>
+                      UNICEN
+                    </h3>
+
+
+                    <div>
+
+                            <img  src="{% static 'img/unicen.jpeg' %}">
+
+                    </div>
+                  <strong><h1>CONVENIOS DEPARTAMENTO DE SANTA CRUZ</h1></strong>
+                  <h3>
+                      Instituto técnico Domingo Savio
+                    </h3>
+
+
+                    <div>
+
+                            <img height="400" width="400" src="{% static 'img/domingo.jpeg' %}">
+
+                    </div>
+                  <h3>
+                    INSTITUTO TECNICO SAN PABLO DEL ORIENTE
+                    </h3>
+
+
+                    <div>
+
+                            <img height="400" width="400" src="{% static 'img/oriente.jpeg' %}">
+
+                    </div>
+                  <h3>
+                    UNIVERSIDAD PRIVADA CUMBRE
+                    </h3>
+
+
+                    <div>
+
+                            <img height="400" width="400" src="{% static 'img/cumbre.jpeg' %}">
+
+                    </div>
+                  <h3>
+                    INSTITUTO TECNICO CEPESS
+                    </h3>
+
+
+                    <div>
+
+                            <img height="400" width="400" src="{% static 'img/cepess.jpeg' %}">
+
+                    </div>
+
+                  <strong><h1>CONVENIOS DEPARTAMENTO DE LA PAZ</h1></strong>
+                  <h3>
+                    FUNDACION SENDA
+                    </h3>
+
+
+                    <div>
+
+                            <img  src="{% static 'img/senda.jpeg' %}">
+
+                    </div>
+                  <h3>
+                    FUNDACION SAID
+                    </h3>
+
+
+                    <div>
+
+                            <img height="400" width="400" src="{% static 'img/said.jpeg' %}">
+
+                    </div>
+                </div>
+              </div>
+
+  </section>
 
   <!--/ Section Contact-Footer Star /-->
   <section class="paralax-mf footer-paralax bg-image sect-mt4 route" style="background-image: url({% static 'img/porvenir.jpeg' %})">
