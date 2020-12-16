@@ -25,7 +25,7 @@ SECRET_KEY = '+jd+hs#_^-vxg7$#@rn#ja-hui*15y9sh_@!6w@$$8hb@x&%@z'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['167.99.136.11','fundacionporvenir.org.bo','www.fundacionporvenir.org.bo']
 
 
 # Application definition
@@ -121,3 +121,9 @@ STATIC_URL = '/static/'
 
 STATICFILES_DIRS = (os.path.join(BASE_DIR,'static'),)
 
+EMAIL_BACKEND = "django.core.mail.backends.smtp.EmailBackend"
+EMAIL_HOST = "smtp.gmail.com"
+EMAIL_USE_TLS = True
+EMAIL_PORT = 587
+EMAIL_HOST_USER = "fundacionporvenir.ong@gmail.com"
+EMAIL_HOST_PASSWORD = "fundacion2020"
