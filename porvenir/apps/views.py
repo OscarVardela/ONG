@@ -9,7 +9,7 @@ def home(request):
         subject = request.POST["asunto"]
         message = request.POST["mensaje"] + " " + "mensaje enviado por:" + " " + request.POST["email"]
         email_from = settings.EMAIL_HOST_USER
-        recipient_list = ['fundacionporvenir.ong@gmail.com',]
+        recipient_list = ['vargastudelaoscar@gmail.com',]
         send_mail( subject, message, email_from, recipient_list )
         return render(request,"contacto.html")
 
