@@ -26,9 +26,10 @@ SECRET_KEY = '+jd+hs#_^-vxg7$#@rn#ja-hui*15y9sh_@!6w@$$8hb@x&%@z'
 DEBUG = True
 
 ALLOWED_HOSTS = ['167.99.136.11','fundacionporvenir.org.bo','www.fundacionporvenir.org.bo']
+#ALLOWED_HOSTS = []
 
 
-# Application definition
+# Application definition∫
 
 INSTALLED_APPS = [
     'django.contrib.admin',
@@ -123,8 +124,8 @@ STATICFILES_DIRS = (os.path.join(BASE_DIR,'static'),)
 
 EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
 EMAIL_HOST = 'smtp.gmail.com'
-EMAIL_HOST_USER = "ffbiosff@gmail.com"
-EMAIL_HOST_PASSWORD = "jjihmwgxivmbcquz"
+EMAIL_HOST_USER = "fundacionporvenir.ong@gmail.com"
+EMAIL_HOST_PASSWORD = "mntjjiqtmcpyjufe"
 EMAIL_PORT = 587
 EMAIL_USE_TLS = True
 DEFAULT_FROM_EMAIL = '<noreply@codingwithmitch.com>'
