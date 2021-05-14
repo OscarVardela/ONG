@@ -29,7 +29,7 @@ ALLOWED_HOSTS = ['167.99.136.11','fundacionporvenir.org.bo','www.fundacionporven
 #ALLOWED_HOSTS = []
 
 
-# Application definition∫
+# Application definition
 
 INSTALLED_APPS = [
     'django.contrib.admin',
